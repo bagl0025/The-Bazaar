@@ -26,8 +26,11 @@ We are an innovatively slick e-commerce website developed using the MERN stack. 
 
 ## Usage
 
-....usage here
-
+Steps to being a purchasing pro:
+1. Sign up with a free account.
+2. Save your cart and preferences.
+3. Purchase online through our secure site.
+4. Wait half a second to receive the purchase of your dreams!
 <img src="./public/assets/screenshot.png" alt="watch this screenshot" width="600"/>
 
 ## License
@@ -43,7 +46,7 @@ Refer to [Contributor Covenant](https://www.contributor-covenant.org/) for contr
 For questions or to report issues contact authors at:
 
 - bagley@umn.edu
--markofprogress@gmail.com
+- markofprogress@gmail.com
 -
 
 ## GitHub
