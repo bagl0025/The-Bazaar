@@ -12,6 +12,7 @@ E-Commerce website using the MERN stack. ....more
 
 # Table of Contents
 
+- [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 - [Contribute](#contribute)
@@ -19,9 +20,13 @@ E-Commerce website using the MERN stack. ....more
 - [Github Profile](#github)
 - [Deployed App](#deployed-app-on-heroku)
 
+## Installation
+
+... install instructions here
+
 ## Usage
 
-After logging in or creating a new user you can create watchlists. If you edit those watchlists you can add shows and reviews. The main page will show watchlists from all users. The dashboard will show only the logged in user's shows
+....usage here
 
 <img src="./public/assets/screenshot.png" alt="watch this screenshot" width="600"/>
 
