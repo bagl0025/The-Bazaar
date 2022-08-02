@@ -8,7 +8,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-E-Commerce website using the MERN stack. ....more
+We are an innovatively slick e-commerce website developed using the MERN stack.  Quality and Service are the foundations of our vision.  Come visit us today to see only the goodest of goods!
 
 # Table of Contents
 
@@ -43,6 +43,7 @@ Refer to [Contributor Covenant](https://www.contributor-covenant.org/) for contr
 For questions or to report issues contact authors at:
 
 - bagley@umn.edu
+-markofprogress@gmail.com
 -
 
 ## GitHub
