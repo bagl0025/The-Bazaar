@@ -57,4 +57,4 @@ https://github.com/bagl0025/The-Bazaar
 
 ## Deployed app on Heroku
 
-https://
+https://shielded-earth-23841.herokuapp.com/
