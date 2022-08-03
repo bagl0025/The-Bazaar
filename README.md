@@ -1,4 +1,4 @@
-# The-Bazaar
+# The Bazaar
 
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
@@ -8,7 +8,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-We are an innovatively slick e-commerce website developed using the MERN stack.  Quality and Service are the foundations of our vision.  Come visit us today to see only the goodest of goods!
+We are an innovatively slick e-commerce website developed using the MERN stack. Quality and Service are the foundations of our vision. Come visit us today to see only the goodest of goods!
 
 # Table of Contents
 
@@ -27,6 +27,7 @@ We are an innovatively slick e-commerce website developed using the MERN stack. 
 ## Usage
 
 Steps to being a purchasing pro:
+
 1. Sign up with a free account.
 2. Save your cart and preferences.
 3. Purchase online through our secure site.
