@@ -1,7 +1,9 @@
 :root {
-  --primary: #232F3E;
-  --secondary: #F3A847;
+  --primary: #1a4171;
+  --secondary: #e29734;
   --tertiary: #B12704;
+  --quaternary: #800055;
+  --quinary: #d7d3cf;
   --light: #fafafa;
   --dark: #272f32;
   --error: rgb(228, 46, 1);
@@ -21,11 +23,13 @@ body {
 body {
   margin: 0;
   padding: 0;
+  border-bottom: #272f32;
   font-family: 'Karla', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
-  font-size: 16px;
-  color: var(--dark);
+  font-size: 15px;
+  color: var(--quaternary);
+  background-color: var(--quinary);
 }
 
 h1,
@@ -35,7 +39,7 @@ h4,
 h5,
 h6 {
   font-family: 'Rubik', sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   margin: 5px 0;
   line-height: 1.25;
 }
@@ -70,7 +74,7 @@ p {
 }
 
 a {
-  color: var(--tertiary);
+  color: var(--primary);
   text-decoration: none;
   font-weight: bold;
 }
@@ -80,23 +84,29 @@ a:hover {
 }
 
 header {
-  background: var(--primary);
+  color: var(--quinary);
+  background-image: radial-gradient(var(--quaternary), var(--primary)); 
+  border-bottom: solid 3px var(--quaternary);
 }
 
 header a {
-  color: var(--light);
+  color: var(--secondary);
 }
-
+li {
+  list-style: none;
+}
 button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
-  border: none;
+  border-radius: .4rem;
+  border: 1px solid var(--quinary);
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  color: var(--secondary);
+  background-color: var(--quaternary);
+  box-shadow: #1a4171;
 }
 
 button:hover {
@@ -110,6 +120,7 @@ button[disabled] {
 
 img {
   max-width: 100%;
+  border-radius: 1rem;
 }
 
 span[role="img"] {
@@ -199,12 +210,30 @@ input:focus {
   text-align: center;
 }
 
+.card2 {
+  width: 33%;
+  text-align: center;
+  border: solid var(--primary) 2px;
+  border-radius: 1rem;
+}
+
 .error-text {
   color: var(--error);
 }
 
+.currentcat {
+  text-align: center;
+  color: var(--primary);
+  background-color: var(--quinary);
+  border-radius: .3rem;
+}
+
 @media screen and (max-width: 768px) {
-  .card {
+  header {
+    justify-content: center;
+  }
+  
+  .card2 {
     width: 100%;
   }
 }
