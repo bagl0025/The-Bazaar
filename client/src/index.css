@@ -92,8 +92,8 @@ a:hover {
 
 header {
   background: var(--light);
-  z-index: 355 index;
-  border-bottom: solid 2px #800055;
+  z-index: 3;
+  border: solid 2px #800055;
 }
 
 header a {
@@ -130,7 +130,6 @@ button[disabled] {
 img {
   max-width: 100%;
   border-radius: 1rem;
-  max-height: 500px;
 }
 
 img:hover {
@@ -160,11 +159,17 @@ input:focus {
 }
 
 .container {
-  width: 85%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
+
+.bodyContainer {
+  width: 80%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;}
 
 .flex-row {
   display: flex;
@@ -261,9 +266,12 @@ input:focus {
     display: none;
   }
 
-  /* header div h5 {
-    justify-content: space-evenly;
-  } */
+  .hero {
+    max-height: 200;
+    width: auto;
+
+  }
+
   .card2 {
     width: 100%;
   }

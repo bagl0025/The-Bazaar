@@ -3,12 +3,19 @@ import img from "../../assets/marketview.jpg"
 
 function Jumbotron({ children }) {
   return (
-    <div
-      style={{ maxHeight: 560, clear: "both", textAlign: "center" }}
+    <div className="hero"
+      style={{
+        backgroundImage: `url(${img})`,
+        backgroundSize: "cover",
+        height: 600,
+        width: 1600,
+        maxHeight: 760,
+        clear: "both",
+        textAlign: "center" }}
     >
       
       {children}
-      <img src={img} alt="bazaar overhead" />
+      {/* <img src={img} alt="bazaar overhead" /> */}
     </div>
   );
 }
