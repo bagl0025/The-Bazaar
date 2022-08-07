@@ -1,11 +1,14 @@
 import React from "react";
+import img from "../../assets/marketview.jpg"
 
 function Jumbotron({ children }) {
   return (
     <div
-      style={{ height: 560, clear: "both", paddingTop: 120, textAlign: "center" }}
+      style={{ maxHeight: 560, clear: "both", textAlign: "center" }}
     >
+      
       {children}
+      <img src={img} alt="bazaar overhead" />
     </div>
   );
 }

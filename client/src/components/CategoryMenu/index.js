@@ -43,7 +43,7 @@ function CategoryMenu() {
 
   return (
     <div className='currentcat'>
-      <h4>Currently Offered Categories:</h4>
+      <h5>Currently Offered Categories:</h5>
       {categories.map((item) => (
         <button
           key={item._id}
