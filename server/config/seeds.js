@@ -9,7 +9,8 @@ db.once('open', async () => {
     { name: 'Household Supplies' },
     { name: 'Electronics' },
     { name: 'Books' },
-    { name: 'Toys' }
+    { name: 'Toys' },
+    { name: 'Misc' },
   ]);
 
   console.log('categories seeded');
@@ -24,7 +25,7 @@ db.once('open', async () => {
       image: 'cookie-tin.jpg',
       category: categories[0]._id,
       price: 2.99,
-      quantity: 500
+      quantity: 500,
     },
     {
       name: 'Canned Coffee',
@@ -33,7 +34,7 @@ db.once('open', async () => {
       image: 'canned-coffee.jpg',
       category: categories[0]._id,
       price: 1.99,
-      quantity: 500
+      quantity: 500,
     },
     {
       name: 'Toilet Paper',
@@ -42,7 +43,7 @@ db.once('open', async () => {
         'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
       image: 'toilet-paper.jpg',
       price: 7.99,
-      quantity: 20
+      quantity: 20,
     },
     {
       name: 'Handmade Soap',
@@ -51,7 +52,7 @@ db.once('open', async () => {
         'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
       image: 'soap.jpg',
       price: 3.99,
-      quantity: 50
+      quantity: 50,
     },
     {
       name: 'Set of Wooden Spoons',
@@ -60,7 +61,7 @@ db.once('open', async () => {
         'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
       image: 'wooden-spoons.jpg',
       price: 14.99,
-      quantity: 100
+      quantity: 100,
     },
     {
       name: 'Camera',
@@ -69,7 +70,7 @@ db.once('open', async () => {
         'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
       image: 'camera.jpg',
       price: 399.99,
-      quantity: 30
+      quantity: 30,
     },
     {
       name: 'Tablet',
@@ -78,7 +79,7 @@ db.once('open', async () => {
         'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
       image: 'tablet.jpg',
       price: 199.99,
-      quantity: 30
+      quantity: 30,
     },
     {
       name: 'Tales at Bedtime',
@@ -87,15 +88,16 @@ db.once('open', async () => {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
       image: 'bedtime-book.jpg',
       price: 9.99,
-      quantity: 100
+      quantity: 100,
     },
     {
       name: 'Spinning Top',
       category: categories[4]._id,
-      description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
+      description:
+        'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
       image: 'spinning-top.jpg',
       price: 1.99,
-      quantity: 1000
+      quantity: 1000,
     },
     {
       name: 'Set of Plastic Horses',
@@ -104,7 +106,7 @@ db.once('open', async () => {
         'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
       image: 'plastic-horses.jpg',
       price: 2.99,
-      quantity: 1000
+      quantity: 1000,
     },
     {
       name: 'Teddy Bear',
@@ -113,7 +115,7 @@ db.once('open', async () => {
         'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
       image: 'teddy-bear.jpg',
       price: 7.99,
-      quantity: 100
+      quantity: 100,
     },
     {
       name: 'Alphabet Blocks',
@@ -122,8 +124,96 @@ db.once('open', async () => {
         'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
       image: 'alphabet-blocks.jpg',
       price: 9.99,
-      quantity: 600
-    }
+      quantity: 600,
+    },
+    {
+      name: 'Redbull formula 1 car',
+      category: categories[5]._id,
+      description:
+        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
+      image: 'F1-RedBull.jpeg',
+      price: 2500000.0,
+      quantity: 1,
+    },
+    {
+      name: 'Fighter Jet',
+      category: categories[5]._id,
+      description:
+        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
+      image: 'jet.jpeg',
+      price: 15000000.0,
+      quantity: 2,
+    },
+    {
+      name: '5.25" floppy disk',
+      category: categories[5]._id,
+      description:
+        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
+      image: 'floppy-disk.jpg',
+      price: 0.99,
+      quantity: 100,
+    },
+    {
+      name: 'M551 Sheridan Tank',
+      category: categories[5]._id,
+      description:
+        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
+      image: 'm551-sheridan.jpeg',
+      price: 750000.0,
+      quantity: 10,
+    },
+    {
+      name: 'Teletubbies',
+      category: categories[5]._id,
+      description:
+        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
+      image: 'teletubbies.jpeg',
+      price: 25.0,
+      quantity: 1,
+    },
+    {
+      name: 'Boot',
+      category: categories[5]._id,
+      description:
+        'Boot. Please note this is the left boot only. Not suitable for someone with two feet',
+      image: 'boot.jpeg',
+      price: 300.0,
+      quantity: 1,
+    },
+    {
+      name: 'Camera',
+      category: categories[5]._id,
+      description: 'State of the art camera. Only 1 left!',
+      image: 'camera.jpeg',
+      price: 4000.0,
+      quantity: 1,
+    },
+    {
+      name: 'Jackelope',
+      category: categories[5]._id,
+      description:
+        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
+      image: 'jackelope.jpg',
+      price: 25.0,
+      quantity: 50,
+    },
+    {
+      name: 'Europa',
+      category: categories[5]._id,
+      description: "One of Jupiter's better moons. Delivery not available.",
+      image: 'Europa.jpg',
+      price: 1000000000.0,
+      quantity: 1,
+    },
+    {
+      name: 'Missle Silo',
+      category: categories[5]._id,
+      description:
+        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
+      image: 'silo.jpg',
+      price: 89000.0,
+      quantity: 1,
+    },
   ]);
 
   console.log('products seeded');
@@ -137,16 +227,16 @@ db.once('open', async () => {
     password: 'password12345',
     orders: [
       {
-        products: [products[0]._id, products[0]._id, products[1]._id]
-      }
-    ]
+        products: [products[0]._id, products[0]._id, products[1]._id],
+      },
+    ],
   });
 
   await User.create({
     firstName: 'Elijah',
     lastName: 'Holt',
     email: 'eholt@testmail.com',
-    password: 'password12345'
+    password: 'password12345',
   });
 
   console.log('users seeded');
