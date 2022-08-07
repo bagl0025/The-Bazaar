@@ -8,14 +8,14 @@ function Jumbotron({ children }) {
         backgroundImage: `url(${img})`,
         backgroundSize: "cover",
         height: 600,
-        width: 1600,
-        maxHeight: 760,
+        width: 1400,
+        maxHeight: 700,
+        maxWidth: 1600,
         clear: "both",
         textAlign: "center" }}
     >
       
       {children}
-      {/* <img src={img} alt="bazaar overhead" /> */}
     </div>
   );
 }

@@ -92,8 +92,8 @@ a:hover {
 
 header {
   background: var(--light);
-  z-index: 3;
-  border: solid 2px #800055;
+  border-bottom: solid 1px var(--dark);
+  padding: 2px 10px 2px 10px;
 }
 
 header a {
@@ -105,15 +105,15 @@ li {
 }
 
 button {
-  font-size: 1rem;
+  font-size: .8rem;
   text-decoration: none;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem .5rem;
   border-radius: .4rem;
   /* border: 1px solid var(--quinary); */
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  color: var(--secondary);
+  color: var(--quinary);
   background-color: var(--quaternary);
   box-shadow: 1px 2px 9px 1px var(--primary);
 }
@@ -132,9 +132,10 @@ img {
   border-radius: 1rem;
 }
 
-img:hover {
+.card img:hover {
   opacity: 0.8;
 }
+
 
 span[role="img"] {
   cursor: default;
@@ -178,6 +179,10 @@ input:focus {
 
 .space-between {
   justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
 }
 
 .flex-end {
@@ -262,12 +267,13 @@ input:focus {
 }
 
 @media screen and (max-width: 600px) {
+  header 
   header div h7 {
     display: none;
   }
 
   .hero {
-    max-height: 200;
+    height: 50%;
     width: auto;
 
   }
