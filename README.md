@@ -12,17 +12,12 @@ We are an innovatively slick e-commerce website developed using the MERN stack. 
 
 # Table of Contents
 
-- [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 - [Contribute](#contribute)
 - [Questions](#questions)
 - [Github Profile](#github)
 - [Deployed App](#deployed-app-on-heroku)
-
-## Installation
-
-... install instructions here
 
 ## Usage
 
@@ -33,7 +28,7 @@ Steps to being a purchasing pro:
 3. Purchase online through our secure site.
 4. Wait half a second to receive the purchase of your dreams!
 
-<img src="./public/assets/screenshot.png" alt="watch this screenshot" width="600"/>
+<img src="./public/assets/screenshot.png" alt="The Bazaar screenshot" width="600"/>
 
 ## License
 
@@ -49,7 +44,6 @@ For questions or to report issues contact authors at:
 
 - bagley@umn.edu
 - markofprogress@gmail.com
--
 
 ## GitHub
 
