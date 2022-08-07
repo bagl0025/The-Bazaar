@@ -8,9 +8,11 @@ const Home = () => {
   return (
     <div className="container">
       <Jumbotron />
+      <div className="bodyContainer">
       <CategoryMenu />
       <ProductList />
       <Cart />
+      </div>
     </div>
   );
 };
