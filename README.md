@@ -28,7 +28,7 @@ Steps to being a purchasing pro:
 3. Purchase online through our secure site.
 4. Wait half a second to receive the purchase of your dreams!
 
-<img src="./public/assets/screenshot.png" alt="The Bazaar screenshot" width="600"/>
+<img src="./client/public/images/screenshot.png" alt="The Bazaar screenshot" width="600"/>
 
 ## License
 
