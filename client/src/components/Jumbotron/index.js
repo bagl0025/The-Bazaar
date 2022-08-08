@@ -7,8 +7,9 @@ function Jumbotron({ children }) {
       style={{
         backgroundImage: `url(${img})`,
         backgroundSize: "cover",
-        height: 600,
-        width: 1400,
+        backgroundRepeat: "no-repeat",
+        height: 540,
+        width: "cover",
         maxHeight: 700,
         maxWidth: 1600,
         clear: "both",

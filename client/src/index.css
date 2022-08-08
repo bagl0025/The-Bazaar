@@ -239,7 +239,7 @@ input:focus {
 }
 
 .card2 {
-  width: 33.3%;
+  width: 20%;
   text-align: center;
   border: solid var(--light) 1px;
   border-radius: 1rem;
@@ -267,7 +267,7 @@ input:focus {
 }
 
 @media screen and (max-width: 600px) {
-  header 
+  
   header div h7 {
     display: none;
   }
