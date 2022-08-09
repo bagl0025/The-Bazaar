@@ -42,13 +42,13 @@ function Nav() {
   return (
     <header className="flex-row px-1 space-between">
       <div>
-        <h5>
+        <h5 className="NavTitle px-1">
           <Link to="/">THE BAZAAR</Link>
         </h5>
 
-        {<h7 className= "px-1">
+        {<h6 className= "NavLabel px-1">
           See what the world has to offer.
-        </h7>}
+        </h6>}
       </div>
       <nav>
         {showNavigation()}

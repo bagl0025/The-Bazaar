@@ -34,26 +34,35 @@ function CategoryMenu() {
     }
   }, [categoryData, loading, dispatch]);
 
-  const handleClick = (id) => {
+  const handleClick = (item) => {
+    if (item.name === 'All') {
+      dispatch({
+        type: UPDATE_CURRENT_CATEGORY,
+        currentCategory: ""
+      });
+    } else {
     dispatch({
       type: UPDATE_CURRENT_CATEGORY,
-      currentCategory: id,
+      currentCategory: item._id,
     });
+  }
   };
 
   return (
     <div className='currentcat'>
-      <h5>Currently Offered Categories:</h5>
-      {categories.map((item) => (
-        <button
-          key={item._id}
-          onClick={() => {
-            handleClick(item._id);
-          }}
-        >
-          {item.name}
-        </button>
-      ))}
+      <h5 className='CatLabel'>Currently Offered Categories:</h5>
+      <div className='categories'>
+        {categories.map((item) => (
+          <button
+            key={item._id}
+            onClick={() => {
+              handleClick(item);
+            }}
+          >
+            {item.name}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }

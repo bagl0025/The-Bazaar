@@ -2,9 +2,9 @@
   position: fixed;
   top: 0;
   right: 0;
-  min-width: 20%;
-  max-width: 30%;
-  max-height: 60%;
+  height: 100%;
+  min-width: 10%;
+  max-width: 450px;
   background-color: var(--light);
   overflow: auto;
   padding: .5rem;
@@ -32,17 +32,18 @@
 }
 
 .cart-closed {
-  position: fixed;
-  top: 8%;
-  right: 1%;
+  position: absolute;
+  top: 25px;
+  right: 20px;
   font-size: 2rem;
   cursor: pointer;
-  background-color: var(--quaternary);
+  background-color: var(--primary);
   border: solid 1px var(--primary);
   border-radius: 30%;
   padding: .55rem;
   width: 50px;
   height: 50px;
+  z-index: 100;
 }
 
 .cart-closed:hover {
@@ -56,10 +57,24 @@
   margin-right: 1rem;
 }
 
+.cart-item {
+  border-bottom: 1px solid var(--primary);
+  margin-bottom: 10px;
+}
+
 .cart input {
   width: 50px;
   padding: 0;
   margin: 0 .5rem 1rem 0;
+}
+
+.basketTotal {
+  border-top: 1px solid var(--quaternary);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
 }
 
 @media screen and (max-width: 768px) {

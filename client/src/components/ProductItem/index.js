@@ -40,7 +40,7 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card2 px-1 py-1">
+    <div className="card2 px-1 py-1 mx-2 my-2">
       <Link to={`/products/${_id}`}>
         <img
           alt={name}
@@ -52,7 +52,7 @@ function ProductItem(item) {
         <div>{quantity} {pluralize("item", quantity)} available</div>
         <span>${price}</span>
       </div>
-      <button onClick={addToCart}>add to basket</button>
+      <button onClick={addToCart}>Add to Basket</button>
     </div>
   );
 }

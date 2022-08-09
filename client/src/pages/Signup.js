@@ -6,7 +6,7 @@ import { ADD_USER } from '../utils/mutations';
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
-  const [addUser] = useMutation(ADD_USER);
+  const [addUser, { error}] = useMutation(ADD_USER);
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -31,12 +31,12 @@ function Signup(props) {
   };
 
   return (
-    <div className="container my-1">
+    <div className="container Form my-1 eightypct">
       <Link to="/login">← Go to Login</Link>
 
-      <h2>REGISTER NEW MEMBER</h2>
+      <h2 className="formTitle">REGISTER NEW MEMBER</h2>
       <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row formLabel space-around my-2">
           <label htmlFor="firstName">First Name:</label>
           <input
             placeholder="First"
@@ -46,7 +46,7 @@ function Signup(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row formLabel space-around my-2">
           <label htmlFor="lastName">Last Name:</label>
           <input
             placeholder="Last"
@@ -56,7 +56,7 @@ function Signup(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row  formLabel space-around my-2">
           <label htmlFor="email">Email:</label>
           <input
             placeholder="youremail@test.com"
@@ -66,7 +66,7 @@ function Signup(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className="flex-row formLabel space-around my-2">
           <label htmlFor="pwd">Password:</label>
           <input
             placeholder="******"
@@ -76,7 +76,12 @@ function Signup(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row flex-end">
+        {error ? (
+          <div>
+            <p className="error-text">The information provided is not sufficient.</p>
+          </div>
+        ) : null}
+        <div className="flex-row flex-center">
           <button type="submit">Submit</button>
         </div>
       </form>

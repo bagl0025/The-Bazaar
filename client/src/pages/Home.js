@@ -9,9 +9,11 @@ const Home = () => {
     <div className="container">
       <Jumbotron />
       <div className="bodyContainer">
-      <CategoryMenu />
-      <ProductList />
-      <Cart />
+        <CategoryMenu />
+      <div className="eightypct">
+        <ProductList />
+        <Cart />
+      </div>
       </div>
     </div>
   );

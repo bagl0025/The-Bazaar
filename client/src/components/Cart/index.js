@@ -75,14 +75,14 @@ const Cart = () => {
       <div className="close" onClick={toggleCart}>
         [close]
       </div>
-      <h2>THE BASKET</h2>
+      <h2>YOUR BAZAAR BASKET</h2>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
-            <CartItem key={item._id} item={item} />
+            <CartItem key={item._id} item={item} className="cart-item" />
           ))}
 
-          <div className="flex-row space-between">
+          <div className="basketTotal flex-row space-between">
             <strong>Total: ${calculateTotal()}</strong>
 
             {Auth.loggedIn() ? (

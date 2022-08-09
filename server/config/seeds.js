@@ -11,6 +11,7 @@ db.once('open', async () => {
     { name: 'Pets' },
     { name: 'Electronics' },
     { name: 'Toys' },
+    {name: 'All' },
   ]);
 
   console.log('categories seeded');
