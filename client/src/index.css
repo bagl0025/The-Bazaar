@@ -239,9 +239,9 @@ input:focus {
 }
 
 .card2 {
-  width: 20%;
+  width: 33.3%;
   text-align: center;
-  border: solid var(--light) 1px;
+  border: solid var(--primary) 1px;
   border-radius: 1rem;
 }
 
