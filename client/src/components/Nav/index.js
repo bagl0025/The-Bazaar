@@ -46,9 +46,9 @@ function Nav() {
           <Link to="/">THE BAZAAR</Link>
         </h5>
 
-        {<h7 className= "px-1">
+        <h6 className= "px-1">
           See what the world has to offer.
-        </h7>}
+        </h6>
       </div>
       <nav>
         {showNavigation()}

@@ -36,6 +36,15 @@ db.once('open', async () => {
       quantity: 58,
     },    
     {
+      name: 'Good Boi',
+      description:
+        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+      image: 'goodboi.jpg',
+      category: categories[3]._id,
+      price: 2500.0,
+      quantity: 1,
+    },
+    {
       name: 'Blackberry Juice',
       description:
         'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
@@ -69,6 +78,15 @@ db.once('open', async () => {
       image: 'toilet-paper.jpg',
       price: 7.99,
       quantity: 20,
+    },
+    {
+      name: '1 Ring Way, The Shire, ME',
+      description:
+        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+      image: 'hobbithole.jpg',
+      category: categories[2]._id,
+      price: 50,
+      quantity: 1,
     },
     {
       name: 'Mega-PhoneXL',
@@ -125,6 +143,15 @@ db.once('open', async () => {
       quantity: 17,
     },    
     {
+      name: 'Street Racer',
+      description:
+        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+      image: 'porsche.jpg',
+      category: categories[4]._id,
+      price: 120000.0,
+      quantity: 7,
+    },
+    {
       name: 'Ted',
       category: categories[3]._id,
       description:
@@ -140,6 +167,15 @@ db.once('open', async () => {
         'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
       image: 'F1-RedBull.jpeg',
       price: 2499999.99,
+      quantity: 1,
+    },
+    {
+      name: 'Lava',
+      description:
+        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+      image: 'lavaflow.jpg',
+      category: categories[2]._id,
+      price: 1,
       quantity: 1,
     },
     {
@@ -181,7 +217,7 @@ db.once('open', async () => {
       name: 'Teletubbies',
       category: categories[3]._id,
       description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
+        'Please, the "price" is actually how much we will pay you to take them...',
       image: 'teletubbies.jpeg',
       price: 25.0,
       quantity: 4,

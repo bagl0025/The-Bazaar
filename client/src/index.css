@@ -63,11 +63,11 @@ h5 {
   font-size: 1.25rem;
 }
 
-h6 {
+/* h6 {
   font-size: 1rem;
-}
+} */
 
-h7 {
+h6 {
   color: var(--light);
   font-size: 0.9rem;
   font-family: 'Times New Roman', Times, serif;
@@ -268,7 +268,7 @@ input:focus {
 
 @media screen and (max-width: 600px) {
   
-  header div h7 {
+  header div h6 {
     display: none;
   }
 
