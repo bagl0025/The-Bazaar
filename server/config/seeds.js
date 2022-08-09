@@ -248,8 +248,16 @@ db.once('open', async () => {
       price: 4000.0,
       quantity: 1,
     },    
-    
-    
+
+    { 
+      name: 'Pita Bread',
+      category: categories[2]._id,
+      description: 'Enjoy this delicious pita bread. You might need hummus right away',
+      image: 'pita-bread.jpg',
+      price: 2.99,
+      quantity: 2,
+    },
+
   ]);
 
   console.log('products seeded');
