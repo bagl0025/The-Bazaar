@@ -258,6 +258,17 @@ db.once('open', async () => {
       quantity: 2,
     },
 
+
+    {
+      name: 'Injera Bread',
+      category: categories[2]. _id,
+      description: 'You have never tasted a bread like this! Make sure to go wash your hands asap!',
+      image: 'Injera-Bread.JPG',
+      price: 3.99,
+      quantity: 4  
+    
+    }
+    
   ]);
 
   console.log('products seeded');
