@@ -98,9 +98,9 @@ header {
 }
 
 header a {
-  color: var(--quaternary);
+  color: var(--quinary);
   font-size: xx-large;
-  font-weight:900;
+  font-weight: 900;
 }
 
 li {
